@@ -1,0 +1,144 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+.navbar {
+  padding: 10px 15px;
+}
+a {
+  font-weight: 500;
+  color: black;
+  text-decoration: inherit;
+}
+.nav-link {
+  font-size: 14px;
+  padding: 10px 15px;
+  text-transform: uppercase;
+  position: relative;
+}
+.down-arrow-icon::after {
+  content: "";
+  width: 16px;
+  height: 20px;
+  background-image: url(/public/arrow-down.png);
+  background-repeat: no-repeat;
+  background-size: 10px;
+  background-position-x: 4px;
+  display: inline-flex;
+  /* background-position-y: center; */
+  align-items: center;
+}
+.cart-login {
+  display: flex;
+}
+a:hover {
+  color:black;
+}
+.navbar{
+  align-items: center;
+}
+.search,.cart{
+  width: 20px;
+  height: 20px;
+}
+.search img,
+.cart img{
+  width: 100%;
+}
+.cart{
+  position: relative;
+}
+.cart-count-bubble{
+  position: absolute;
+  top: -14px;
+  right: -21px;
+  min-width: 23px;
+  min-height: 23px;
+  text-align: center;
+  border-radius: 50%;
+  color: #ffffff;
+  background-color: orangered;
+}
+.text {
+  font-size: 12px;
+  line-height: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.Logo {
+  width: 100px;
+}
+.Logo img{
+  max-width: 100%;
+}
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+.header-right {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+.cart {
+  position: relative;
+}
+.search{
+  display: inline-flex;
+  position: relative;
+}
+.search::after {
+  content: "";
+  width: 2px;
+  height: 20px;
+  background-color: #d6c2c2ab;
+  position: absolute;
+  right: -11px;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    background-color: #ffffff;
+  }
+
+  button {
+    background-color: #f9f9f9;
+  }
+}
