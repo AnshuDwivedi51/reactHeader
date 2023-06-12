@@ -18,8 +18,8 @@ let data = [
         <div className="navlist menu-bar">
             <ul className="menubar" style={menubarStyle}>
                {
-                data.map((val)=>(
-               <Li name = {val.name} unique ={val.id}/>
+                data.map((val, index)=>(
+               <Li key={index} name = {val.name} unique ={val.id}/>
                 ))
                }
                <li><a href="#" className="nav-link down-arrow-icon">Pages</a></li>

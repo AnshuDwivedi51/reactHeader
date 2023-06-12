@@ -10,8 +10,8 @@ function User(){
             <div className="cart">
                 <a href="#">
                     <img src={cart} alt="" />
-                    <div class="cart-count-bubble">
-                        <span class="text">0</span>
+                    <div className="cart-count-bubble">
+                        <span className="text">0</span>
                     </div>
                 </a>
             </div>
